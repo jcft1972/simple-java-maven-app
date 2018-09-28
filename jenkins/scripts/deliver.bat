@@ -25,3 +25,6 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 echo 'set -x'
 echo 'java -jar target/${NAME}-${VERSION}.jar'
 java -jar target/my-app-1.0-SNAPSHOT.jar
+mkdir \destinoapp
+mkdir \destinoapp\bin
+copy target\my-app-1.0-SNAPSHOT.jar \destinoapp\bin
