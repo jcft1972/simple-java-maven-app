@@ -23,8 +23,4 @@ echo 'set +x'
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 echo 'set -x'
-echo 'java -jar target/${NAME}-${VERSION}.jar'
-mkdir \destinoapp2
-mkdir \destinoapp2\exec
-copy target\my-app-1.0-SNAPSHOT.jar \destinoapp\exec
-java -jar \destinoapp2\exec\my-app-1.0-SNAPSHOT.jar
+java -jar target/${NAME}-${VERSION}.jar
